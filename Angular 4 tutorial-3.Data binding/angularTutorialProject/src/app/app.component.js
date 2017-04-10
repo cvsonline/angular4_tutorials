@@ -21,7 +21,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{title}}</h1>\n            <h2>Hello {{user.name}}. This is your details: </h2>\n            <div><label>id: </label>{{user.id}}</div>\n            <div><label>name: </label>{{user.name}}</div>\n            <div><label>email: </label>{{user.email}}</div>\n",
+        template: "            \n            <h1>Hello {{title}}</h1>\n            <h2>Hello {{user.name}}. This is your details: </h2>\n            <div><label>id: </label>{{user.id}}</div>\n            <div><label>name: </label>{{user.name}}</div>\n            <div><label>email: </label>{{user.email}}</div>\n            <div>\n              <label>name: </label>\n              <input [(ngModel)]=\"user.name\" placeholder=\"title\">\n            </div>            \n",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

@@ -3,11 +3,16 @@ import { User } from './models/user'
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{title}}</h1>
+  template: `            
+            <h1>Hello {{title}}</h1>
             <h2>Hello {{user.name}}. This is your details: </h2>
             <div><label>id: </label>{{user.id}}</div>
             <div><label>name: </label>{{user.name}}</div>
             <div><label>email: </label>{{user.email}}</div>
+            <div>
+              <label>name: </label>
+              <input [(ngModel)]="user.name" placeholder="title">
+            </div>            
 `,
 })
 export class AppComponent  {
