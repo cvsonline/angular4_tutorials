@@ -24,25 +24,16 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angularTutorialProject/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+            <state relative-caret-position="746">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <marker date="1491905254000" expanded="true" signature="614:1023" placeholder="..." />
-                <marker date="1491905254000" expanded="true" signature="678:1005" placeholder="..." />
-                <marker date="1491905254000" expanded="true" signature="1132:1481" placeholder="..." />
-                <marker date="1491905254000" expanded="true" signature="1302:1462" placeholder="..." />
+                <marker date="1491906587000" expanded="true" signature="569:883" placeholder="..." />
+                <marker date="1491906587000" expanded="true" signature="621:849" placeholder="..." />
+                <marker date="1491906587000" expanded="true" signature="638:849" placeholder="..." />
+                <marker date="1491906587000" expanded="true" signature="992:1341" placeholder="..." />
+                <marker date="1491906587000" expanded="true" signature="1162:1322" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui-1.8.10.custom.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularTutorialProject/node_modules/selenium-webdriver/lib/test/data/js/jquery-ui-1.8.10.custom.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="512" column="389" selection-start-line="512" selection-start-column="389" selection-end-line="512" selection-end-column="389" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -178,6 +169,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5f8a45af-8cd9-4c19-98a7-3bb9f28754ae" name="Default" comment="" />
@@ -185,12 +179,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491901385936</updated>
-      <workItem from="1491901387674" duration="2177000" />
+      <workItem from="1491901387674" duration="3942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2177000" />
+    <option name="totallyTimeSpent" value="3942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1922" height="1051" extended-state="0" />
@@ -213,6 +207,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -240,14 +242,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angularTutorialProject/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+        <state relative-caret-position="746">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1491905254000" expanded="true" signature="614:1023" placeholder="..." />
-            <marker date="1491905254000" expanded="true" signature="678:1005" placeholder="..." />
-            <marker date="1491905254000" expanded="true" signature="1132:1481" placeholder="..." />
-            <marker date="1491905254000" expanded="true" signature="1302:1462" placeholder="..." />
+            <marker date="1491906587000" expanded="true" signature="569:883" placeholder="..." />
+            <marker date="1491906587000" expanded="true" signature="621:849" placeholder="..." />
+            <marker date="1491906587000" expanded="true" signature="638:849" placeholder="..." />
+            <marker date="1491906587000" expanded="true" signature="992:1341" placeholder="..." />
+            <marker date="1491906587000" expanded="true" signature="1162:1322" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -34,24 +34,24 @@ var USERS = [
 ];
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Angular Tutorial';
+        this.title = 'Angular Tutorial. This is a list of users';
+        this.users = USERS;
         this.user = {
             id: 1,
             name: 'Nguyen Duc Hoang',
             age: 30,
             email: "sunlight4d@gmail.com"
         };
-        this.users = USERS;
     }
-    AppComponent.prototype.onSelect = function (user1) {
-        this.selectedUser = user1;
+    AppComponent.prototype.onSelect = function (myUser) {
+        this.selectedUser = myUser;
     };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{title}}</h1>\n            <h2>This is a list of users</h2>\n            <ul class=\"users\">              \n              <li *ngFor=\"let eachUser of users\" \n              [class.selected]=\"eachUser === selectedUser\" \n              (click)=\"onSelect(eachUser)\">\n              <!--When the expression (hero === selectedHero) is true, Angular adds the selected CSS class-->                \n                <span class=\"badge\">{{eachUser.id}}</span> {{eachUser.name}}\n              </li>\n            </ul>\n            <!--When selectedUser is not NULL, it come to that div-->\n            <div *ngIf=\"selectedUser\"> \n                <h2>You selected: {{selectedUser.name}} with details:</h2>\n                <div><label>User's id: </label>{{selectedUser.id}}</div>\n               <div>\n                    <label>name: </label>\n                    <input [(ngModel)]=\"selectedUser.name\" placeholder=\"Edit your name here\"/>\n                </div>\n            </div>\n",
+        template: "<h1>Hello {{title}}</h1>\n            <ul class=\"users\">\n                <li *ngFor=\"let eachUser of users\"\n                 [class.selected]=\"eachUser === selectedUser\"\n                 (click)=\"onSelect(eachUser)\"\n                >\n                    <span class=\"badge\">{{eachUser.id}}</span> {{eachUser.name}}\n                </li>                \n            </ul>\n            <!--When selectedUser is not NULL, it come to that div-->\n            <div *ngIf=\"selectedUser\"> \n                <h2>You selected: {{selectedUser.name}} with details:</h2>\n                <div><label>User's id: </label>{{selectedUser.id}}</div>\n               <div>\n                    <label>name: </label>\n                    <input [(ngModel)]=\"selectedUser.name\" placeholder=\"Edit your name here\"/>\n                </div>\n            </div>\n            \n            \n",
         styles: ["\n    .selected {\n      background-color: red !important;\n      color: white;\n    }\n    .users {\n      margin: 0 0 2em 0;\n      list-style-type: none;\n      padding: 0;\n      width: 15em;\n    }\n    .users li {\n      cursor: pointer;\n      position: relative;\n      left: 0;\n      background-color: #EEE;\n      margin: .5em;\n      padding: .3em 0;\n      height: 1.6em;\n      border-radius: 1px;\n    }\n    .users li.selected:hover {\n      background-color: red !important;\n      color: white;\n    }\n    .users li:hover {\n      color: #607D8B;\n      background-color: #DDD;\n      left: .1em;\n    }\n    .users .text {\n      position: relative;\n      top: -3px;\n    }\n    .users .badge {\n      display: inline-block;\n      font-size: small;\n      color: white;\n      padding: 0.8em 0.7em 0 0.7em;\n      background-color: green;\n      line-height: 1em;\n      position: relative;\n      left: -1px;\n      top: -4px;\n      height: 1.8em;\n      margin-right: .8em;\n      border-radius: 1px 0 0 1px;\n    }"]
     })
 ], AppComponent);

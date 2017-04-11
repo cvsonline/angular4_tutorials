@@ -31,14 +31,13 @@ const USERS:User[] = [
 @Component({
   selector: 'my-app',
   template: `<h1>Hello {{title}}</h1>
-            <h2>This is a list of users</h2>
-            <ul class="users">              
-              <li *ngFor="let eachUser of users" 
-              [class.selected]="eachUser === selectedUser" 
-              (click)="onSelect(eachUser)">
-              <!--When the expression (hero === selectedHero) is true, Angular adds the selected CSS class-->                
-                <span class="badge">{{eachUser.id}}</span> {{eachUser.name}}
-              </li>
+            <ul class="users">
+                <li *ngFor="let eachUser of users"
+                 [class.selected]="eachUser === selectedUser"
+                 (click)="onSelect(eachUser)"
+                >
+                    <span class="badge">{{eachUser.id}}</span> {{eachUser.name}}
+                </li>                
             </ul>
             <!--When selectedUser is not NULL, it come to that div-->
             <div *ngIf="selectedUser"> 
@@ -49,6 +48,8 @@ const USERS:User[] = [
                     <input [(ngModel)]="selectedUser.name" placeholder="Edit your name here"/>
                 </div>
             </div>
+            
+            
 `,
   styles: [`
     .selected {
@@ -100,17 +101,17 @@ const USERS:User[] = [
     }`]
 })
 export class AppComponent  {
-  title = 'Angular Tutorial';
+  title = 'Angular Tutorial. This is a list of users';
+  users = USERS;
+  selectedUser:User;
+  onSelect(myUser:User):void {
+    this.selectedUser = myUser;
+  }
+
   user:User = {
       id: 1,
       name: 'Nguyen Duc Hoang',
       age: 30,
       email: "sunlight4d@gmail.com"
-  }
-  users = USERS;
-  selectedUser:User;
-
-  onSelect(user1: User):void {
-    this.selectedUser = user1;
   }
 }
