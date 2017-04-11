@@ -40,16 +40,7 @@ const USERS:User[] = [
                 </li>                
             </ul>
             <!--When selectedUser is not NULL, it come to that div-->
-            <div *ngIf="selectedUser"> 
-                <h2>You selected: {{selectedUser.name}} with details:</h2>
-                <div><label>User's id: </label>{{selectedUser.id}}</div>
-               <div>
-                    <label>name: </label>
-                    <input [(ngModel)]="selectedUser.name" placeholder="Edit your name here"/>
-                </div>
-            </div>
-            
-            
+            <user-detail [selectedUser]="selectedUser"></user-detail>                      
 `,
   styles: [`
     .selected {
