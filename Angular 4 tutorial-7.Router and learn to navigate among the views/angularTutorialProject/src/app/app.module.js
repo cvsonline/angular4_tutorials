@@ -8,8 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
+var users_component_1 = require("./users.component");
 var user_detail_component_1 = require("./user-detail.component");
+var user_service_1 = require("./user.service");
+var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
+var dashboard_component_1 = require("./dashboard.component");
+var routes = [
+    { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+];
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,11 +27,22 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            forms_1.FormsModule
+            forms_1.FormsModule,
+            router_1.RouterModule.forRoot([
+                {
+                    path: "users",
+                    component: users_component_1.UserComponent
+                }
+            ])
         ],
         declarations: [
             app_component_1.AppComponent,
+            dashboard_component_1.DashboardComponent,
+            users_component_1.UserComponent,
             user_detail_component_1.UserDetailComponent
+        ],
+        providers: [
+            user_service_1.UserService
         ],
         bootstrap: [app_component_1.AppComponent]
     })
