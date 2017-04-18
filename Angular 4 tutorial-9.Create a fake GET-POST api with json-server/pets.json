@@ -1,0 +1,24 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Agapi Mou",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "name": "Meo meo",
+      "gender": "female"
+    },
+    {
+      "id": 3,
+      "name": "Baby Boo",
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "name": "Misty",
+      "gender": "male"
+    }
+  ]
+}
